@@ -82,5 +82,12 @@ namespace ProductApps
             return totalChargeAfterWrap;
         }
 
+        //calculate the total charge after GST calTotalChargeAfterGST
+        public decimal calTotalChargeAfterGST(decimal delivery, decimal wrap, decimal gst)
+        {
+            decimal totalChargeAfterGST;
+            totalChargeAfterGST = (TotalPayment + delivery + wrap) * gst;
+            return totalChargeAfterGST;
+        }
     }
 }
