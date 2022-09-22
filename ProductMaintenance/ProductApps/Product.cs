@@ -65,5 +65,12 @@ namespace ProductApps
         {
             TotalPayment = Price * Quantity;
         }
+
+        public decimal calTotalCharge(decimal delivery)
+        {
+            decimal totalCharge;
+            totalCharge = TotalPayment + delivery;
+            return totalCharge;
+        }
     }
 }
